@@ -31,7 +31,14 @@ async function moviesInfo() {
                     
                    
                 }else{
-                    console.log("Not Available");
+                    let poster = document.createElement('img');
+                    poster.src = "https://thumbs.dreamstime.com/b/not-available-red-rubber-stamp-over-white-background-87242466.jpg";
+                    poster.style.width = "200px"
+                    poster.style.height = "150px";
+                    poster.style.marginTop="100px"
+
+                    
+                    div.append(poster);
                 }
             } catch (err) {
                 console.log("err:", err);
